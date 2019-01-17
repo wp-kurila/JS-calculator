@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background: url(../img/background.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+#pages-block {
+    display: none;
+}
+
+.calc {
+    max-width: 1068px;
+    margin: 125px auto 0 auto;
+    border: 2px solid #efae02;
+    padding-top: 26px;
+}
+
+    .calc .calc-tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+        .calc .calc-tabs .calc-tabs-left, .calc .calc-tabs .calc-tabs-rigth  {
+            background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.7686270000000001) 0%, #323131 100%);
+            background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.7686270000000001) 0%, #323131 100%);
+            background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.7686270000000001) 0%, #323131 100%);
+            background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.7686270000000001) 0%, #323131 100%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.7686270000000001) 0%, #323131 100%);
+            color: #cecece;
+            font-size: 18px;    
+            line-height: 70px;        
+            width: 200px;
+            height: 70px;
+            border-radius: 0 15px  0 0;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .calc .calc-tabs .calc-tabs-left {
+            border-radius: 15px 0 0 0;
+            margin-right: 2px;
+        }
+
+        .calc .calc-tabs .calc-tabs-active {
+            background: #efae02;
+            color: #000000;
+            position: relative;            
+        }
+
+            .calc .calc-tabs .calc-tabs-active::after {
+                content: " ";
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 200px;
+                height: 1px;
+                background-color: #efae02;                
+            }
+
+    .calc .calc-blocks {
+        width: 73%;
+        margin: 0 auto 26px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .calc .calc-blocks .calc-blocks-title {
+            color: #ffffff;
+            font-size: 30px;
+            position: relative;
+        }
+
+            .calc .calc-blocks .calc-blocks-title::after {
+                content: " ";
+                width: 100%;
+                height: 1px;
+                background-color: #efae02;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+            }
+
+        .calc .calc-blocks .calc-blocks-counter {
+            border: 3.15px solid rgba(246, 179, 0, .6);
+            background: transparent;
+            width: 126px;
+            height: 54px;
+            color: rgba(246, 179, 0, 1);
+            font-size: 48px;
+        }    
+
+    .calc .calc-addiction {
+        width: 73%;
+        margin: 7px auto 44px auto;        
+    }
+
+        .calc .calc-addiction .calc-addiction-title {
+            text-align: center;
+            color: #ecac04;
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+        .calc .calc-addiction .calc-addiction-block {
+            color: #ecac04;
+            font-size: 30px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 34px;
+        }
+
+            .calc .calc-addiction .calc-addiction-block input {
+                width: 23px;
+                height: 23px;
+                margin-right: 23px;
+                opacity: 0.6;
+            }
+
+    .calc .calc-total {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 10px auto 32px auto;
+    }
+
+        .calc .calc-total span {
+            color: #ffffff;
+            font-size: 36px;
+        }
+
+        .calc .calc-total .calc-total-count {
+            max-width: 200px;
+            height: 60px;
+            background-color: transparent;
+            color: #efae02;
+            border: 0;
+            font-size: 56px;
+            position: relative;            
+        }
+
+            .calc .calc-total .calc-total-count::after {
+                content: " ";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: #efae02;
+            }
+
+
+
+
+
+
+
